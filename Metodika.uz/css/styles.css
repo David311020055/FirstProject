@@ -1,3 +1,11 @@
+body{
+  margin: 0;
+}
+
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
 nav{
     box-sizing: border-box;
     padding: 0 100px !important;
@@ -7,8 +15,20 @@ nav{
 }
 
 .navbar{
-  background-color: #16305cd6 !important;
+  background-color: #263856 !important;
   text-transform: uppercase;
+  top: 32px;
+  transition: 0.5s;
+}
+
+.sticky {
+  top: 0;
+  animation: stick 0.5s;
+}
+
+@keyframes stick{
+  0% {top: 32px}
+  100% {top: 0;}
 }
 
 .nav-item{
@@ -24,14 +44,15 @@ nav{
 .carousel{
   width: 100%;
   margin: 0 auto;
-  box-shadow: 10px 10px 20px 0px;
+  box-shadow: 10px 0px 20px 10px;
 }
 
 .instructions{
   box-sizing: border-box;
   color: #ffffff;
-  padding: 10px 20px;
-  background-color: green;
+  padding: 5px 20px;
+  background-color: #52637f;
+  color: #b6b4b4;
 }
 
 .margin{
@@ -50,10 +71,16 @@ nav{
   margin-left: 20px;
 }
 .instr-ul li a{
-  color: #fff;
+  color: #b6b4b4;
   font-weight: 500;
 }
 
+.nav-link {
+  padding: 15px 50px;
+  width: 90px;
+  text-align: center;
+  border-radius: 0 15px;
+}
 
 .input-group{
   width: 40%;
@@ -79,6 +106,7 @@ nav{
   margin-left: 10px;
   font-size: 1.3rem;
   cursor: pointer;
+  color: #fff;
 }
 
 .login{
@@ -93,5 +121,47 @@ nav{
 }
 
 .login li a {
+  padding: 15px;
   color: #ffffff;
+  text-transform: capitalize;
 }
+
+.login li a:hover{
+  border-radius: 0 15px;
+  background-color: rgba(255,255,255,0.1);
+}
+
+footer {
+  margin-top: 20%;
+  padding: 50px 10%;
+  background-color: #263856;
+  color: #fff;
+}
+
+footer ul li{
+  display: inline;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer h1{
+  text-align: center;
+}
+
+.logo{
+  width: 90px;
+  transition: 0.5s;
+}
+
+.fa-shopping-cart{
+  color: #fff;
+}
+
+.instr-ul li a:hover{
+  color: #fff;
+}
+
+
+/*News Section*/
