@@ -4,6 +4,7 @@ body{
 
 *{
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 nav{
@@ -167,21 +168,19 @@ footer h1{
 /*News Section*/
 
 .news {
-  margin-top: 10%;
+  margin-top: 5%;
   padding: 50px 10%;
   color: #333;
 }
 
 .news img {
   width: 85%;
-  float: right;
-  border: 5px solid #707070;
   padding: 12px;
-  border-radius: 0 70px;
 }
 
 .news h1{
-  font-family: 'Acme', sans-serif;
+  font-family: 'Mukta', sans-serif;
+  font-size: 3rem;
 }
 
 .card-text{
@@ -191,5 +190,16 @@ footer h1{
 }
 .card-text p {
   text-align: left;
+  font-size: 16px;
+  color: #959595;
+  word-spacing: 10px;
+  line-height: 2;
+}
+
+.hvr-bounce-to-right{
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #2098D1;
+  margin-top: 30px;
   font-size: 20px;
 }
