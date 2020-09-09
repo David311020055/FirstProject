@@ -40,7 +40,7 @@ nav{
   height: 600px;
   margin-top: 10px;
   margin-top: 0;
-  filter: brightness(40%);
+  filter: brightness(80%);
 }
 .carousel{
   width: 100%;
@@ -97,7 +97,7 @@ nav{
   color: #fff;
 }
 
-@media (max-width: 1320px){
+@media (max-width: 1520px){
   .form-inline.d-flex .form-control{
     width: 20rem;
   }
@@ -196,7 +196,7 @@ footer h1{
   line-height: 2;
 }
 
-.hvr-bounce-to-right{
+.hvr-bounce-to-right, .hvr-bounce-to-left{
   padding: 15px;
   border-radius: 5px;
   border: 1px solid #2098D1;
