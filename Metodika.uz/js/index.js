@@ -20,15 +20,26 @@ $(document).ready(function(){
     })
 });
 
-function buildProductView(elements){
+function buildProductView(elements) {
     $("#products").empty();
-    elements.map(element => {
-        let proHtml = '<div class="carousel-item">'+
+
+    let activeClass = '<div class="carousel-item active">' +
         '<img class="d-block w-100"' +
+        'src="' + elements[0].image + '">' +
+        '<div class="carousel-caption d-none d-md-block">' +
+        '<h1' + elements[0].title + '</h1>' +
+        '</div>';
+
+    $(".carousel-inner").append(activeClass);
+    let proHtml = elements.slice(1).map(element => {
+        return '<div class="carousel-item">' +
+            '<img class="d-block w-100"' +
             'src="' + element.image + '">' +
             '<div class="carousel-caption d-none d-md-block">' +
-            '<h1' + element.title + '</h1>' + 
-    '</div>';
-    $(".carousel-inner").append(proHtml);
+            '<h1' + element.title + '</h1>' +
+            '</div>';
     });
+
+    $(".carousel-inner").append(proHtml);
+    
 }
